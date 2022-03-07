@@ -1,8 +1,15 @@
-import HeaderComponent from './Component/HeaderComponent.js';
+import Description from "./Component/Description.js";
+import Title from "./Component/Title.js";
+import Transaction from "./Component/Transaction.js";
+import "./App.css";
 
 function App() {
   return (
-   <HeaderComponent/>
+    <div>
+      <Title />
+      <Description />
+      <Transaction />
+    </div>
   );
 }
 

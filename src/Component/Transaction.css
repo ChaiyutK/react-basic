@@ -1,0 +1,17 @@
+.item-list{
+    padding: 0;
+    
+}
+.item-list li{
+    color : black;
+    text-align: center;
+    list-style: none;
+    background-color: bisque;
+    width: 400px;
+    box-shadow: 0px 2px 3px;
+    padding: 30px;
+    margin: 0 auto 10px;
+}
+.item-list li span{
+    padding-left: 150px;
+}

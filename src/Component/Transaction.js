@@ -1,5 +1,6 @@
 import Item from "./Item";
 import "./Transaction.css";
+import { v4 as uuidv4 } from 'uuid';
 
 function Transaction()
 {
@@ -8,7 +9,7 @@ function Transaction()
         {title:"เงินเดือน",amount:"20000"}
 ];
 const itemsElement = data.map((e,i)=>{
-    return <Item data={e} key={i} />
+    return <Item data={e} key={i} /> //<Item {...e} /> เขียนแบบ spread operator ได้
 })
     return(
     <div className="frame-list">

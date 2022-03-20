@@ -1,10 +1,10 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 const Forminsert = (props) => {
     const [title,setTitle] = useState("");
     const [amount,setAmount] = useState(0);
-
+    
     const inputTitle = (event)=>{
         setTitle(event.target.value)
     }
@@ -20,6 +20,9 @@ const Forminsert = (props) => {
         props.insertItem(newItem)
         console.log(newItem)
     }
+    useEffect(()=>{
+        console.log("ทดสอบการใช้งาน effect")
+    })
   return (
     <div>
         <form onSubmit={saveData}>

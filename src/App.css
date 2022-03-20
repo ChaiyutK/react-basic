@@ -16,3 +16,9 @@
   background-color: bisque;
   padding: 10px 60px 10px 60px;
 }
+li.expenses {
+  background-color: rgb(219, 61, 61);
+}
+li.income {
+  background-color: rgb(53, 187, 53);
+}

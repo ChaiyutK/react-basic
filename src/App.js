@@ -7,9 +7,9 @@ import { useState } from "react";
 
 function App() {
   const data = [
-    {title:"ค่ารักษาพยาบาล",amount:-2000},
-    {title:"เงินเดือน",amount:20000},
-    {title:"เงินเดือน",amount:20000}
+    {id:"1",title:"ค่ารักษาพยาบาล",amount:-2000},
+    {id:"2",title:"เงินเดือน",amount:20000},
+    {id:"3",title:"เงินเดือน",amount:20000}
 ];
   const [item,setItem] = useState(data)
   const addItem = (newItem) =>
@@ -18,12 +18,18 @@ function App() {
       return [newItem,...e]
     })
   }
+  const deleteButton = (id) =>{
+    setItem((e)=>{
+      return item
+    })
+    console.log("get id from transaction Component",id)
+}
   return (
     <div>
       <Title />
       <Description />
       <Forminsert insertItem={addItem}/>
-      <Transaction data={item}/>
+      <Transaction data={item} deleteButton={deleteButton}/>
     </div>
   );
 }

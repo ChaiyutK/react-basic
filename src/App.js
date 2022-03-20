@@ -20,7 +20,10 @@ function App() {
   }
   const deleteButton = (id) =>{
     setItem((e)=>{
-      return item
+      const newItem = item.filter((e)=>{
+        return e.id != id
+      })
+      return newItem
     })
     console.log("get id from transaction Component",id)
 }

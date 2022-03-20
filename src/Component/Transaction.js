@@ -2,14 +2,10 @@ import Item from "./Item";
 import "./Transaction.css";
 import { v4 as uuidv4 } from 'uuid';
 
-function Transaction()
+function Transaction(props)
 {
-    const data = [
-        {title:"ค่ารักษาพยาบาล",amount:-2000},
-        {title:"เงินเดือน",amount:20000},
-        {title:"เงินเดือน",amount:20000}
-];
-const itemsElement = data.map((e,i)=>{
+    const {data} = props
+    const itemsElement = data.map((e,i)=>{
     return <Item title={e.title} amount={e.amount} key={i} /> //<Item {...e} /> เขียนแบบ spread operator ได้
 })
     return(

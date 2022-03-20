@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
-*{
-  font-family: 'Prompt', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+* {
+  font-family: "Prompt", sans-serif;
+}
+.form-control {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.form-control label {
+  padding-right: 10px;
+}
+.form-submit {
+  text-align: center;
+}
+.form-submit button {
+  background-color: bisque;
+  padding: 10px 60px 10px 60px;
 }
